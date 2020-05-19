@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form>
+      <input
+        name="city"
+        type="text"
+        placeholder="Enter a City"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+    </form>
+
+    <button>My first button</button>
+
+    <h2>Register</h2>
+    <form>
+      <button type="button">Click Me</button>
+      <input type="email" placeholder="Email" name="email" />
+      <input type="password" name="password" placeholder="password" />
+      <input type="checkbox" name="tos-agree" /> I agree to the term of services
+      <p>Select shirt size</p>
+      <input type="radio" name="shirt-size" value="XS" /> XS <br />
+      <input type="radio" name="shirt-size" value="S" /> S <br />
+      <input type="radio" name="shirt-size" value="M" /> M <br />
+      <input type="radio" name="shirt-size" value="L" /> L <br />
+      <button type="submit">Submit Form</button>
+      <!-- <input type="submit" value="GO!" /> -->
+    </form>
+
+    <h2>Other Imput Types</h2>
+    <form>
+      Pick a Color: <input type="color" name="color" /> Pick a Date:
+      <input type="date" name="birthday" />
+      How Happy Are You?
+      <input type="range" name="happiness" min="1" max="10" step="2" />
+
+      <br />
+      Select a State:
+      <select name="state">
+        <option value="">--Choose Your State--</option>
+        <option value="Al"> Alabama</option>
+        <option value="AK"> Arizona</option>
+        <option value="Az"> Alaska</option>
+        <option value="AR"> Arkansa</option>
+      </select>
+      <br />
+
+      Please Draft and Exquisite Essay:
+      <textarea
+        name="essay"
+        id=""
+        cols="30"
+        rows="10"
+        minlength="5"
+        maxlength="200"
+      >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, </textarea
+      >
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <!-- Reddit Search Engine -->
+    <h2>Reddit Search Engine</h2>
+    <form action="https://www.reddit.com/search" method="get">
+      <input type="text" name="q" placeholder="Search Team" />
+      <br />
+      Sort By:
+      <select name="sort">
+        <option value="top">Top</option>
+        <option value="new">New</option>
+        <option value="comments">Comments</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+    <form method="post" enctype="multipart/form-data">
+      <label>
+        This won't actually work, but go ahead and pick a file!
+        <input type="file" />
+      </label>
+    </form>
+  </body>
+</html>
